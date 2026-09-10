@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+
+       <style>
+body {
+    background-color: lightsteelblue;
+    font-family: Arial;
+}
+
+form {
+    background-color: white;
+    width: 400px;
+    padding: 20px;
+    margin: auto;
+}
+
+input[type="submit"] {
+    background-color: green;
+    color: white;
+    padding: 8px;
+    border: none;
+}
+
+input[type="reset"] {
+    background-color: red;
+    color: white;
+    padding: 8px;
+    border: none;
+}
+</style>
+
+</head>
+
+<body>
+
+    <h2 align="center">Student Registration Form</h2>
+
+    <form>
+
+        <label>Full Name:</label><br>
+        <input type="text" placeholder="Enter Your Full Name" required>
+        <br><br>
+
+        <label>Email:</label><br>
+        <input type="email" placeholder="Enter Your Email" required>
+        <br><br>
+
+        <label>Password:</label><br>
+        <input type="password" placeholder="Enter Password" required>
+        <br><br>
+
+        <label>Mobile Number:</label><br>
+        <input type="tel" placeholder="Enter Mobile Number" required>
+        <br><br>
+
+        <label>Date of Birth:</label><br>
+        <input type="date">
+        <br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Other
+        <br><br>
+
+        <label>Course:</label><br>
+        <select>
+            <option>Select Course</option>
+            <option>Computer Engineering</option>
+            <option>Information Technology</option>
+            <option>Mechanical Engineering</option>
+            <option>Electronics Engineering</option>
+        </select>
+        <br><br>
+
+        <label>Skills:</label><br>
+        <input type="checkbox" name="skills" value="html"> HTML
+        <input type="checkbox" name="skills" value="css"> CSS
+        <input type="checkbox" name="skills" value="javascript"> JavaScript
+        <input type="checkbox" name="skills" value="react"> React
+        <br><br>
+
+        <label>Address:</label><br>
+        <textarea rows="4" cols="40" placeholder="Enter Your Address"></textarea>
+        <br><br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+
+    </form>
+
+</body>
+</html>
