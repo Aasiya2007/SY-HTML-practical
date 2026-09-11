@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+     <style>
+body {
+    font-family: Arial;
+    background: #f2f2f2;
+}
+
+form {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid blue;
+    border-radius: 10px;
+    background: white;
+}
+
+h1 {
+    text-align: center;
+    color: blue;
+}
+
+input {
+    padding: 7px;
+    border: 1px solid gray;
+}
+
+button {
+    padding: 8px 20px;
+    background: blue;
+    color: white;
+    border: none;
+}
+</style>
+
+    <script>
+     
+        function validateForm() 
+        {
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+
+            if (name == "") 
+            {
+                alert("Please enter your name");
+                return false;
+            }
+
+            if (email == "") 
+            {
+                alert("Please enter your email");
+                return false;
+            }
+
+            if (!email.includes("@")) 
+            {
+                alert("Please enter a valid email");
+                return false;
+            }
+
+            alert("Registration Successful!");
+            return true;
+        }
+
+        function clickButton() 
+        {
+            alert("Submit button clicked!");
+        }
+
+      
+    </script>
+</head>
+
+<body>
+
+    <h1>Registration Form</h1>
+
+    <form onsubmit="return validateForm()">
+
+        <label>Name:</label>
+        <input type="text" id="name">
+        <br><br>
+
+        <label>Email:</label>
+        <input type="text" id="email">
+        <br><br>
+
+        <button type="submit"
+                onclick="clickButton()"
+                onmouseover="mouseOver()">
+            Submit
+        </button>
+
+    </form>
+
+</body>
+</html>
